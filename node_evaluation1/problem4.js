@@ -14,8 +14,8 @@ function solution(key){
     let goalObject = goals[key];
 
     let replacedSymptoms = goalObject.symptoms.map(Element=> {
-        return symptomsList[Element];
+        return symptomsList[Element]; //find the symptom from symptoms list (key as symptoms from goal object symptoms array) and add to replaced Symptoms array
     });
 
-    return {...goalObject, symptoms:replacedSymptoms};
+    return {...goalObject, symptoms:replacedSymptoms}; //overwrites symptoms property and other properties remain same
 }
