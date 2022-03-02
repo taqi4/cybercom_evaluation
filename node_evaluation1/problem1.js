@@ -1,5 +1,11 @@
-var list = [10, 20, 60, 30, 54, 39];
-console.log(sum(list));
+var list1 = [10, 20, 60, 30, 54, 39];//test cases 1
+console.log(sum(list1));//output 213
+
+var list2 = [10, 20, 60, 30, "54", "39"] // test case 2 
+console.log(sum(list2));//output 213  added "54" and "39" as number
+
+var list3 = ["a", null, , 30, 54, 39] //test case 3
+console.log(sum(list3));//output 123 ignored null umdefined and "a"
 
 function sum (list){
     let sum=0;
