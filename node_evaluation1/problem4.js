@@ -19,3 +19,4 @@ function solution(key){
 
     return {...goalObject, symptoms:replacedSymptoms}; //overwrites symptoms property and other properties remain same
 }
+// evaluation tasks complete
